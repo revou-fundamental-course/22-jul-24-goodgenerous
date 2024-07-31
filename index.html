@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/Logo_TQ.png">
+    <title>TravelQuest™ - Explore Your Journey!</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header id="header-nav" class="container">
+            <div class="logo"><span style="color: #4558f5;">Travel</span>Quest</div>
+        </header>
+        <article class="container">
+            <section id="nav-container">
+                <a class="nav-item" href="#home">Home</a>
+                <a class="nav-item" href="#our-package">Our Package</a>
+                <a class="nav-item" href="#home" id="btn-call-us">Contact Us</a>
+                <button id="hamburger">☰</button>
+            </section>
+        </article>
+    </nav>
+    <nav id="navbar-expanded">
+        <header id="header-nav-expanded" class="container">
+            <div class="logo"><span style="color: #4558f5;">Travel</span>Quest</div>
+            <button id="hamburger-expanded">☰</button>
+        </header>
+        <article class="container">
+            <section id="nav-container-expanded">
+                <a class="nav-item-expanded" href="#home">Home</a>
+                <a class="nav-item-expanded" href="#our-package">Our Package</a>
+                <a class="nav-item-expanded" href="#home">Contact Us</a>
+            </section>
+        </article>
+    </nav>
+    <main class="container">
+        <article class="content-1">
+            <article id="home">
+                <header class="headline">
+                    <h1><b>Your Trusted Travel Agents</b></h1>
+                    <p class="sub-headline">Your Happiness is our happiness ✈️</p>
+                </header>
+            </article>
+            <section class="content-container">
+                <article class="content-left">
+                    <div class="main-content-banner image-1"></div>
+                    <div class="main-content-banner image-2"></div>
+                    <div class="main-content-banner image-3"></div>
+                    <p><i>"Liburan jadi menyenangkan bersama Travel Agentku 🌟"</i></p>
+                    <div class="icon-container">
+                        <section class="user-image">
+                            <div class="icon-image"></div>
+                        </section>
+                        <section class="user-bio">
+                            <p><b>Florence Hughes</b><br><i class="sub-headline-2">Ibu Rumah Tangga, 28</i></p>
+                        </section>
+                    </div>
+                </article>
+                <article class="form-container">
+                    <h2>Contact Us</h2>
+                    <p class="sub-headline-2">Sales will contact you 1x24 hours after we receive the data 📲</p>
+                    <form>
+                        <label for="name">Your Name:</label>
+                        <input required id="name" type="text" name="name" placeholder="First and last name">
+                        <span id="error-message-name"></span>
+                        <label for="email">Email Address:</label>
+                        <input required id="email" type="email" name="email" placeholder="example@email.com">
+                        <span id="error-message-email"></span>
+
+                        <label for="option">Which country are you interested in?</label>
+                        <select required id="option" name="option">
+                            <option value="" disabled selected>Select Option</option>
+                            <option value="indonesia">Indonesia</option>
+                            <option value="japan">Japan</option>
+                            <option value="singapore">Singapore</option>
+                            <option value="italy">Italy</option>
+                            <option value="germany">Germany</option>
+                            <option value="turkey">Turkey</option>
+                        </select>
+                        <span id="error-message-option"></span>
+                        <button class="button-sm" onclick="formValidation()">Send</button>
+                    </form>
+                </article>
+            </section>
+        </article>
+        <article class="content-2">
+            <article>
+                <header class="headline">
+                    <h2><b>Unlock Exclusive <span style="color: #4558f5;">Travel Advantages</span></b></h2>
+                    <p class="sub-headline-3">Travel with us to unlock a world of exclusive benefits and make every
+                        journey a memorable one 🏝</p>
+                </header>
+                <section class="benefits">
+                    <div class="benefit-item">
+                        <div class="icon-benefit">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                                viewBox="0 0 48 48">
+                                <path fill="#eb6773" d="M37,6c0-1.105-0.895-2-2-2H13c-1.105,0-2,0.895-2,2v4h26V6z">
+                                </path>
+                                <path fill="#b31523"
+                                    d="M11,41.72c0,0.996,1.092,1.606,1.94,1.084L24,35.998l11.06,6.806C35.908,43.326,37,42.716,37,41.72	V30H11V41.72z">
+                                </path>
+                                <rect width="26" height="12" x="11" y="18" fill="#cf1928"></rect>
+                                <rect width="26" height="8" x="11" y="10" fill="#d9414f"></rect>
+                                <path
+                                    d="M37,13.868c-0.143,0.134-0.27,0.287-0.354,0.476l-2.417,5.419l-5.902,0.623	c-0.59,0.063-1.07,0.454-1.253,1.019c-0.184,0.565-0.023,1.164,0.418,1.56l4.408,3.973l-1.232,5.805	c-0.093,0.439,0.015,0.892,0.297,1.24c0.28,0.346,0.712,0.553,1.155,0.553c0.256,0,0.512-0.068,0.741-0.199L37,31.947V13.868z"
+                                    opacity=".05"></path>
+                                <path
+                                    d="M37,14.777l-2.431,5.453l-6.188,0.653c-0.392,0.042-0.71,0.302-0.831,0.676	c-0.122,0.375-0.015,0.771,0.277,1.034l4.622,4.165l-1.292,6.087c-0.062,0.292,0.01,0.592,0.196,0.822s0.473,0.367,0.767,0.367	c0.17,0,0.34-0.046,0.491-0.132L37,31.37V14.777z"
+                                    opacity=".07"></path>
+                                <linearGradient id="sVVMIiOtUETG57~p7RkEia_ODpuHNgfyltD_gr1" x1="30.747" x2="44.819"
+                                    y1="-371.32" y2="-390.147" gradientTransform="matrix(1 0 0 -1 0 -356)"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#ffda1c"></stop>
+                                    <stop offset="1" stop-color="#feb705"></stop>
+                                </linearGradient>
+                                <path fill="url(#sVVMIiOtUETG57~p7RkEia_ODpuHNgfyltD_gr1)"
+                                    d="M38.442,14.751l2.651,5.946l6.474,0.684c0.417,0.044,0.584,0.56,0.273,0.841l-4.836,4.358	l1.351,6.369c0.087,0.41-0.352,0.729-0.715,0.52L38,30.215l-5.639,3.253c-0.363,0.209-0.802-0.11-0.715-0.52l1.351-6.369	l-4.836-4.358c-0.311-0.28-0.143-0.797,0.273-0.841l6.474-0.684l2.651-5.946C37.728,14.369,38.271,14.369,38.442,14.751z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h1><b>Exclusive Deals and Packages</b></h1>
+                        <p class="sub-headline-2">We have partnerships with leading airlines, hotels, and tour
+                            operators, allowing us to offer exclusive deals and packages that you won't find anywhere
+                            else.
+                        </p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="icon-benefit">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                                viewBox="0 0 48 48">
+                                <linearGradient id="IMoH7gpu5un5Dx2vID39Ra_pIPl8tqh3igN_gr1" x1="9.858" x2="38.142"
+                                    y1="9.858" y2="38.142" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#9dffce"></stop>
+                                    <stop offset="1" stop-color="#50d18d"></stop>
+                                </linearGradient>
+                                <path fill="url(#IMoH7gpu5un5Dx2vID39Ra_pIPl8tqh3igN_gr1)"
+                                    d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z">
+                                </path>
+                                <linearGradient id="IMoH7gpu5un5Dx2vID39Rb_pIPl8tqh3igN_gr2" x1="13" x2="36" y1="24.793"
+                                    y2="24.793" gradientUnits="userSpaceOnUse">
+                                    <stop offset=".824" stop-color="#135d36"></stop>
+                                    <stop offset=".931" stop-color="#125933"></stop>
+                                    <stop offset="1" stop-color="#11522f"></stop>
+                                </linearGradient>
+                                <path fill="url(#IMoH7gpu5un5Dx2vID39Rb_pIPl8tqh3igN_gr2)"
+                                    d="M21.293,32.707l-8-8c-0.391-0.391-0.391-1.024,0-1.414l1.414-1.414	c0.391-0.391,1.024-0.391,1.414,0L22,27.758l10.879-10.879c0.391-0.391,1.024-0.391,1.414,0l1.414,1.414	c0.391,0.391,0.391,1.024,0,1.414l-13,13C22.317,33.098,21.683,33.098,21.293,32.707z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h1><b>Expert Travel Advisors</b></h1>
+                        <p class="sub-headline-2">With in-depth knowledge of destinations worldwide, we provide expert
+                            advice and recommendations, ensuring your journey is smooth and enjoyable from start to
+                            finish.
+                        </p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="icon-benefit">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                                viewBox="0 0 48 48">
+                                <path fill="#c94f60"
+                                    d="M42.583,9.067l-3.651-3.65c-0.555-0.556-1.459-0.556-2.015,0l-1.718,1.72l5.664,5.664l1.72-1.718	C43.139,10.526,43.139,9.625,42.583,9.067">
+                                </path>
+                                <path fill="#f0f0f0" d="M6.905,35.43L5,43l7.571-1.906l0.794-6.567L6.905,35.43z">
+                                </path>
+                                <path fill="#edbe00"
+                                    d="M36.032,17.632l-23.46,23.461l-5.665-5.665l23.46-23.461L36.032,17.632z">
+                                </path>
+                                <linearGradient id="o-p5DWUWqOn9GY3Aui69-a_D7WUsUhXDMGW_gr1" x1="35.612" x2="35.612"
+                                    y1="7.494" y2="17.921" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#dedede"></stop>
+                                    <stop offset="1" stop-color="#d6d6d6"></stop>
+                                </linearGradient>
+                                <path fill="url(#o-p5DWUWqOn9GY3Aui69-a_D7WUsUhXDMGW_gr1)"
+                                    d="M30.363,11.968l4.832-4.834l5.668,5.664l-4.832,4.834L30.363,11.968z"></path>
+                                <path fill="#787878" d="M5.965,39.172L5,43l3.827-0.965L5.965,39.172z"></path>
+                            </svg>
+                        </div>
+                        <h1><b>Personalized Travel Experiences</b></h1>
+                        <p class="sub-headline-2">Whether you're looking for a relaxing beach vacation, an adventurous
+                            mountain trek, or a cultural city tour, we've got you covered</p>
+                    </div>
+                </section>
+            </article>
+            <article id="our-package">
+                <header class="headline">
+                    <h2><b>Our <span style="color: #4558f5;">Package</span></b></h2>
+                    <p class="sub-headline-3">Travel with us to unlock a world of exclusive benefits and make every
+                        journey a memorable one</p>
+                </header>
+                <section class="packages">
+                    <div class="package-item">
+                        <div class="container-package">
+                            <div class="icon-package">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" />
+                                </svg>
+                            </div>
+                            <h1>Indonesia</h1>
+                            <p class="sub-headline-2">Travel and Tourism in Indonesia. Visit interesting cultural and
+                                culinary heritage sites.
+                            </p>
+                            <div class="img-packages">
+                                <img src="./assets/image-indonesia.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="package-item">
+                        <div class="container-package">
+                            <div class="icon-package">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" />
+                                </svg>
+                            </div>
+                            <h1>Japan</h1>
+                            <p class="sub-headline-2">Travel and Tourism in Japan. Visit interesting cultural and
+                                culinary heritage sites.
+                            </p>
+                            <div class="img-packages">
+                                <img src="./assets/image-japan.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="package-item">
+                        <div class="container-package">
+                            <div class="icon-package">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" />
+                                </svg>
+                            </div>
+                            <h1>Singapore</h1>
+                            <p class="sub-headline-2">Travel and Tourism in Singapore. Visit interesting cultural and
+                                culinary heritage sites.
+                            </p>
+                            <div class="img-packages">
+                                <img src="./assets/image-singapore.jpg" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="packages">
+                    <div class="package-item-2">
+                        <div class="container-package">
+                            <div class="icon-package">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" />
+                                </svg>
+                            </div>
+                            <h1>Italy</h1>
+                            <p class="sub-headline-2">Travel and Tourism in Italy. Visit interesting cultural and
+                                culinary heritage sites.
+                            </p>
+                            <div class="img-packages">
+                                <img src="./assets/image-italy.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="package-item-2">
+                        <div class="container-package">
+                            <div class="icon-package">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" />
+                                </svg>
+                            </div>
+                            <h1>Germany</h1>
+                            <p class="sub-headline-2">Travel and Tourism in Germany. Visit interesting cultural and
+                                culinary heritage sites.
+                            </p>
+                            <div class="img-packages">
+                                <img src="./assets/image-germany.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="package-item-2">
+                        <div class="container-package">
+                            <div class="icon-package">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" />
+                                </svg>
+                            </div>
+                            <h1>Turkey</h1>
+                            <p class="sub-headline-2">Travel and Tourism in Turkey. Visit interesting cultural and
+                                culinary heritage sites.
+                            </p>
+                            <div class="img-packages">
+                                <img src="./assets/image-turkey.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </article>
+        <article class="content-3">
+            <header class="headline">
+                <h2><b>Your dream adventure is just a <span style="color: #4558f5;">click away!</span></b></h2>
+                <p class="sub-headline-3">With our expert planning, exclusive deals, and personalized service, we ensure
+                    every journey is unforgettable. Don't miss out on the vacation of a lifetime—book now and start your
+                    adventure with us today!</p>
+                <a class=" button-lg " type="submit" href="#home">Book Now!</a>
+            </header>
+        </article>
+    </main>
+    <footer>
+        <main class=" container ">
+            <div class=" footer-content ">
+                <div class=" logo "><span style=" color: #4558f5; ">Travel</span>Quest</div>
+                <section class=" footer-nav ">
+                    <a class=" footer-nav-item " href=" ">Terms of Service</a>
+                    <a class=" footer-nav-item " href=" ">Privacy Policy</a>
+                </section>
+            </div>
+            <hr color=" #4256fa ">
+            <p style=" color: gray; text-align: center; padding-top: 1.5rem; ">© 2024 - TravelQuest™</p>
+        </main>
+    </footer>
+    <script src=" ./js/script.js "></script>
+</body>
+
+</html>
